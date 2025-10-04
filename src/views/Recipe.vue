@@ -172,14 +172,17 @@ export default {
       try {
         loading.value = true
         
+        // Get the base URL
+        const baseUrl = import.meta.env.BASE_URL
+        
         // Load the manifest of recipe files
-        const manifestResponse = await fetch('/data/recipes-manifest.json')
+        const manifestResponse = await fetch(`${baseUrl}data/recipes-manifest.json`)
         const recipeFiles = await manifestResponse.json()
         
         // Try to load all recipes and find the one with matching ID
         for (const filename of recipeFiles) {
           try {
-            const response = await fetch(`/data/${filename}`)
+            const response = await fetch(`${baseUrl}data/${filename}`)
             const data = await response.json()
             
             if (data.id === props.id) {

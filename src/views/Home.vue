@@ -88,14 +88,17 @@ export default {
       try {
         loading.value = true
         
+        // Get the base URL
+        const baseUrl = import.meta.env.BASE_URL
+        
         // Load the manifest of recipe files
-        const manifestResponse = await fetch('/data/recipes-manifest.json')
+        const manifestResponse = await fetch(`${baseUrl}data/recipes-manifest.json`)
         const recipeFiles = await manifestResponse.json()
         
         // Load all recipes
         const recipePromises = recipeFiles.map(async (filename) => {
           try {
-            const response = await fetch(`/data/${filename}`)
+            const response = await fetch(`${baseUrl}data/${filename}`)
             return await response.json()
           } catch (error) {
             console.error(`Error loading ${filename}:`, error)
