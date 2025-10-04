@@ -9,7 +9,7 @@
           </button>
           <h1 class="logo">
             <i class="fas fa-utensils"></i>
-            My Recipes
+            Sam's Recipes
           </h1>
           <div></div> <!-- Spacer for flex layout -->
         </div>

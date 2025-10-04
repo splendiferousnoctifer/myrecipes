@@ -4,7 +4,7 @@
       <div class="container">
         <h1 class="logo">
           <i class="fas fa-utensils"></i>
-          My Recipes
+          Sam's Recipes
         </h1>
         <p class="subtitle">Discover, Cook, and Enjoy</p>
       </div>

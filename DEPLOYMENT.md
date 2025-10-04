@@ -9,16 +9,16 @@ Your Vue recipe app has been pushed to GitHub and is configured for automatic de
 
 The app is configured to automatically deploy to GitHub Pages whenever you push to the `main` branch.
 
-### Setup GitHub Pages (One-time setup)
+### Setup GitHub Pages
+
+The workflow is configured to automatically enable GitHub Pages, but if you need to verify:
 
 1. Go to your repository on GitHub: https://github.com/splendiferousnoctifer/myrecipes
 2. Click on **Settings**
 3. Scroll down to **Pages** (in the left sidebar under "Code and automation")
-4. Under **Source**, select:
-   - Source: **GitHub Actions**
-5. Save the settings
+4. Under **Source**, it should show: **GitHub Actions**
 
-That's it! The GitHub Actions workflow will automatically:
+The GitHub Actions workflow will automatically:
 - Build your Vue app
 - Deploy it to GitHub Pages
 - Make it available at: **https://splendiferousnoctifer.github.io/myrecipes/**
