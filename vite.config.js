@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/myrecipes/',
+  base: process.env.NODE_ENV === 'production' ? '/myrecipes/' : '/',
   server: {
     port: 3000
   }
