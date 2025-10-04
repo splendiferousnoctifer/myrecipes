@@ -662,6 +662,24 @@ body {
     justify-content: center;
   }
   
+  .header-content .logo {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+  
+  .header-content .logo i {
+    font-size: 1.3rem;
+  }
+  
+  .back-button {
+    font-size: 0.75rem;
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .recipe-page .header {
+    padding: 1rem 0;
+  }
+  
   .recipe-hero .recipe-image {
     width: 100%;
     height: 250px;
@@ -720,5 +738,20 @@ body {
     height: 24px;
     font-size: 0.85rem;
     top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content .logo {
+    font-size: 1.2rem;
+  }
+  
+  .header-content .logo i {
+    font-size: 1.1rem;
+  }
+  
+  .back-button {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.7rem;
   }
 }
